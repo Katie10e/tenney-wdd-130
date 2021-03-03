@@ -1,2 +1,4 @@
-# tenney-wdd-130
-This is my final project website for WDD 130 @BYUI. 
+# WDD 130 Final Project
+Owner: Katelyn Tenney
+
+Semester: Winter 2021
