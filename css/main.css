@@ -102,10 +102,10 @@ main {
     padding: var(--spacing);
     color: var(--font-color);
     background-color: var(--background-color);
-    margin: 100px;
+    margin: 75px;
 }
 
-section {
+.home_sections{
     display: block;
     display: grid;
     grid-template-columns:50% auto ;
@@ -132,6 +132,7 @@ section {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 30px;
 }
 
 #old_sewing_machine {
@@ -174,6 +175,45 @@ section {
     margin-right: auto;
 }
 
+.about_section {
+    display: grid;
+    grid-template-columns:1fr auto ;
+    grid-template-rows: 1fr;
+    border: solid;
+    padding: 10px 10px;
+    margin: 30px 0 30px 0;
+}
+
+.card {
+    text-align: center;
+    border: solid;
+    padding: 5px;
+    width: 300px;
+    height: auto;
+}
+
+.card_photo {
+    width: 200px;
+    height: auto;
+    margin: 5px 0 0 0;
+}
+
+.about_description {
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.about_name {
+    font-size: 30px;
+}
+
+#contact_photo {
+    float: right;
+    width: 400px;
+    height: auto;
+    margin: 0 75px 75px 0;
+}
+
 footer {
     display: grid;
     grid-template-rows: auto;
@@ -183,6 +223,30 @@ footer {
     padding: var(--spacing);
     color: var(--alt-font-color);
     background-color: var(--alt-background-color);
+}
+
+.form {
+    border: solid;
+    border-radius: 10px;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.labels {
+    margin: 30px 10px 30px 10px;
+    font-size: 20px;
+}
+
+.faq {
+    margin: 50px 0 50px 10px;
+}
+
+#week-schedule {
+    margin:10px 0 5px 0;
+    text-decoration: underline;
 }
 
 footer a {
