@@ -1,35 +1,22 @@
+/* YOU WILL EDIT ALL THE COLORS BELOW */
 :root {
-    /* Settings */
-    --spacing: 15px;
-    --font-size: 1.15rem;
     /* Normal Colors */
     --background-color: #f1c1c1;
     --alt-background-color: #f1c1c1;
+    --primary-color: black;
+    --alt-primary-color: darkslategray;
     --font-color: black;
     --alt-font-color: darkslategray;
     --border-color: #333348;
+
     /* Dark Mode Colors */
     --dark-background-color: #333348;
     --dark-alt-background-color: #333348;
+    --dark-primary-color: #f1c1c1;
+    --dark-alt-primary-color: #f1c1c1;
     --dark-font-color: #f1c1c1;
     --dark-alt-font-color: #f1c1c1;
     --dark-border-color: #f1c1c1;
-}
-
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    text-rendering: optimizeLegibility;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    font-size: 62.5%;
-    font-family: 'Noticia Text', serif;
-    line-height: 25px;
 }
 
 header {
@@ -79,184 +66,114 @@ header nav ul li {
     font-size: 40px;
     font-family: 'Playfair Display SC', serif;
 }
-
-#banner {
-    width:100%;
-    height:auto;
-}
-#home_banner_image {
-    display:flex;
-    align-items:center;
-    justify-content:center; 
-    position: relative;
+html, body {
+    margin: 0;
+    padding: 0;
+    text-rendering: optimizeLegibility;
 }
 
-#banner_text_question {
-    position: absolute;
-    font-size: 40px;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
-main {
-    flex: 1;
-    font-size: var(--font-size);
-    padding: var(--spacing);
-    color: var(--font-color);
-    background-color: var(--background-color);
-    margin: 75px;
-}
-
-.home_sections{
-    display: block;
-    display: grid;
-    grid-template-columns:50% auto ;
-    grid-template-rows: auto;
-    grid-column-gap: 40px;
-}
-
-#mission_statement {
-    grid-row: 1;
-    grid-column: 1;
-    padding: 20px 20px 20px 80px;
-    float: right;
-    border: 5px black;
-    border-style: double;
-    border-color: var(--border-color);
-}
-
-#home_needle_thread_bobbins {
-    grid-row: 1;
-    grid-column: 2;
-    width: 400px;
-    height:auto;
-    padding: 20px 20px 20px 30px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-}
-
-#old_sewing_machine {
-    grid-row: 1;
-    grid-column: 1;
-    padding: 20px 20px 20px 20px;
-    width: auto;
-    height: 200px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#machine_services {
-    grid-row: 1;
-    grid-column: 2;
-    padding: 20px 20px 20px 60px;
-    border: 5px black;
-    border-style: double;
-    border-color: var(--border-color);
-}
-
-#contact_info {
-    grid-row: 1;
-    grid-column: 1;
-    padding: 20px 20px 20px 80px;
-    border: 5px black;
-    border-style: double;
-    border-color: var(--border-color);
-}
-
-#outline_peach {
-    grid-row: 1;
-    grid-column: 2;
-    width: 75;
-    height: auto;
-    margin: 30px 0 20px 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.about_section {
-    display: grid;
-    grid-template-columns:1fr auto ;
-    grid-template-rows: 1fr;
-    border: solid;
-    padding: 10px 10px;
-    margin: 30px 0 30px 0;
-}
-
-.card {
+body {
+    font-size: 62.5%;
+    padding: 2rem 1rem;
     text-align: center;
-    border: solid;
-    padding: 5px;
-    width: 300px;
-    height: auto;
+    font-family: 'Nunito', sans-serif;
 }
 
-.card_photo {
-    width: 200px;
-    height: auto;
-    margin: 5px 0 0 0;
-}
-
-.about_description {
-    font-size: 22px;
-    line-height: 1.5;
-}
-
-.about_name {
-    font-size: 30px;
-}
-
-#contact_photo {
-    float: right;
-    width: 400px;
-    height: auto;
-    margin: 0 75px 75px 0;
-}
-
-
-
-.form {
-    border: solid;
-    border-radius: 10px;
-    width: 400px;
-    height: 350px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.labels {
-    margin: 30px 10px 30px 10px;
-    font-size: 20px;
-}
-
-.faq {
-    margin: 50px 0 50px 10px;
-}
-
-#week-schedule {
-    margin:10px 0 5px 0;
+body h1 {
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
     text-decoration: underline;
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
 }
 
-#wireframe {
+body h2 {
+    font-size: 1.75rem;
+    font-family: 'Varela Round', sans-serif;
+}
+
+body button {
+    font-size: 1.15rem;
+    padding: 0.75rem 1.5rem;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    background-color: var(--alt-background-color);
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+}
+
+body button:hover {
+    background-color: var(--background-color);
+}
+
+body > div {
+    text-align: left;
+    font-size: 1.15rem;
+    margin: 1rem auto;
+    max-width: 750px;
+    border-top: 1px solid var(--alt-background-color);
+}
+
+body > div:first-of-type {
+    border-top: 0px transparent;
+}
+
+body div .color-wrapper .color {
+    width: 100%;
+    height: 150px;
+    margin: 0.75rem 0;
+    border: 1px solid var(--primary-color);
+}
+
+body > div:nth-of-type(1), body > div:nth-of-type(2) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin: 0 0 0 125px;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 15px;
 }
 
-.wireframe_photo {
-    width: 450px;
-    height: 500px;
-    margin: 50px 10px 0 0;
+body > div:nth-of-type(1) h2, body > div:nth-of-type(2) h2 {
+    grid-row: 1;
+    grid-column: 1/5;
 }
 
-#wireframe_head {
-    margin: 0 0 0 50px
+body > div:nth-of-type(1) .color-wrapper:nth-of-type(1) .color {
+    background-color: var(--background-color);
 }
 
+body > div:nth-of-type(1) .color-wrapper:nth-of-type(2) .color {
+    background-color: var(--alt-background-color);
+}
+
+body > div:nth-of-type(1) .color-wrapper:nth-of-type(3) .color {
+    background-color: var(--primary-color);
+}
+
+body > div:nth-of-type(1) .color-wrapper:nth-of-type(4) .color {
+    background-color: var(--alt-primary-color);
+}
+
+body > div:nth-of-type(2) .color-wrapper:nth-of-type(1) .color {
+    background-color: var(--dark-background-color);
+}
+
+body > div:nth-of-type(2) .color-wrapper:nth-of-type(2) .color {
+    background-color: var(--dark-alt-background-color);
+}
+
+body > div:nth-of-type(2) .color-wrapper:nth-of-type(3) .color {
+    background-color: var(--dark-primary-color);
+}
+
+body > div:nth-of-type(2) .color-wrapper:nth-of-type(4) .color {
+    background-color: var(--dark-alt-primary-color);
+}
 
 footer {
     display: grid;
@@ -269,6 +186,7 @@ footer {
     background-color: var(--alt-background-color);
 }
 
+
 footer a {
     color: var(--alt-font-color);
 }
@@ -278,6 +196,12 @@ footer #legal {
     grid-column: 1;
     display: flex;
     align-items: center;
+}
+
+#footer_font {
+    font-size: 20px;
+    font-family: 'Noticia Text', serif;
+    line-height: 25px;
 }
 
 footer nav {
@@ -393,9 +317,9 @@ footer #dark-mode #tgl-wrapper .tgl:checked + .tgl-btn:after {
     transition: all 0.2s ease;
 }
 
-/*===========================================*\
-  APPLY DARK MODE COLORS WHEN DARK MODE IS ON 
-\*===========================================*/
+
+
+
 
 body.dark-mode header {
     border-bottom: 1px solid var(--dark-border-color);
@@ -407,10 +331,36 @@ body.dark-mode header a {
     color: var(--dark-alt-font-color);
 }
 
-body.dark-mode main {
-    color: var(--dark-font-color);
+body.dark-mode {
+    background-color: var(--dark-background-color);
+    color: var(--dark-primary-color);
+}
+
+body.dark-mode button {
+    color: var(--dark-primary-color);
+    border: 1px solid var(--dark-primary-color);
+    background-color: var(--dark-alt-background-color);
+}
+
+body.dark-mode button:hover {
     background-color: var(--dark-background-color);
 }
+
+body.dark-mode > div {
+    border-top: 1px solid var(--dark-alt-background-color);
+}
+
+body.dark-mode > div:first-of-type {
+    border-top: 0px transparent;
+}
+
+body.dark-mode div .color-wrapper .color {
+    border: 1px solid var(--dark-primary-color);
+}
+
+
+
+
 
 body.dark-mode footer {
     border-top: 1px solid var(--dark-border-color);
