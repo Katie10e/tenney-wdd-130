@@ -138,7 +138,7 @@ main {
 #old_sewing_machine {
     grid-row: 1;
     grid-column: 1;
-    padding: 20px 20px 20px 20px;
+    padding: 40px 20px 20px 20px;
     width: auto;
     height: 200px;
     display: block;
@@ -255,6 +255,12 @@ main {
 
 #wireframe_head {
     margin: 0 0 0 50px
+}
+
+#seam_ripper {
+    width: 450px;
+    height: auto;
+    align-items: center;
 }
 
 
