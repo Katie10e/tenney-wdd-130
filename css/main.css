@@ -199,7 +199,7 @@ main {
 }
 
 .about_description {
-    font-size: 22px;
+    font-size: 24px;
     line-height: 1.5;
 }
 
@@ -258,10 +258,66 @@ main {
 }
 
 #seam_ripper {
+    display:block;
     width: 450px;
     height: auto;
-    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+#pink_sewing_machine {
+    width: 350px;
+    height: auto;
+}
+
+.caption {
+    font-size: 10px;
+}
+
+.service_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 25px 0 0 0;
+}
+
+.service_text {
+    line-height: 1.7;
+    font-size: 25px;
+}
+
+#pink_figure {
+    text-align: center;
+    vertical-align: top;
+}
+
+#service_table {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+    border: solid 5px;
+    border-color: var(--border-color);
+    align-self: end;
+    margin: 0 20px  0 0 ;
+    height: 100px;
+    width: 800px;
+    
+}
+
+#tips_line {
+    line-height: 1.7;
+}
+
+#head_4 {
+    margin: 40px 0 0 0;
+    font-size: 15px;
+}
+
+#sources {
+    margin: 0 0 0 0;
+    font-size: 15px;
+}
+
 
 
 footer {
@@ -440,3 +496,4 @@ body.dark-mode footer #dark-mode #tgl-wrapper .tgl + .tgl-btn {
 body.dark-mode footer #dark-mode #tgl-wrapper .tgl + .tgl-btn:after {
     background-color: var(--dark-border-color);
 }
+
